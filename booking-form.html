@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buchung</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="container">
+    <form id="myForm" action="confirmation.html" onsubmit="submit()">
+      <div class="mt-2">
+        <label for="anr" class="form-label">Anrede</label>
+        <select id="anr" class="form-select" aria-label="Anrede">
+          <option selected value="Herr">Herr</option>
+          <option value="Frau">Frau</option>
+        </select>
+      </div>
+      <div class="mt-2">
+        <label for="vname" class="form-label">Vorname</label>
+        <input id="vname" class="form-control" type="text" placeholder="Max" autocomplete="given-name">
+      </div>
+      <div class="mt-2">
+        <label for="nname" class="form-label">Nachname</label>
+        <input id="nname" class="form-control" type="text" placeholder="Muster" autocomplete="family-name">
+      </div>
+      <div class="mt-2">
+        <label for="str" class="form-label">Strasse Nr.</label>
+        <input id="str" class="form-control" type="text" placeholder="Talstrasse 1" autocomplete="street-address">
+      </div>
+      <div class="mt-2">
+        <label for="plz" class="form-label">PLZ</label>
+        <input id="plz" class="form-control" type="number" placeholder="8000" autocomplete="postal-code">
+      </div>
+      <div class="mt-2">
+          <label for="ort" class="form-label">Ort</label>
+          <input id="ort" class="form-control" type="text" placeholder="Zweisimmen" autocomplete="address-level2">
+      </div>
+      <div class="mt-2">
+        <label for="email" class="form-label">E-Mail</label>
+        <!-- TODO: Autocomplete hinzufügen -->
+        <input id="email" class="form-control" type="e-mail" autocomplete="email">
+      </div>
+      <div class="mt-2">
+        <label for="geb" class="form-label">Geburtsdatum</label>
+        <input id="geb" class="form-control" type="date">
+      </div>
+      <div class="form-check mt-2">
+        <input id="agb" class="form-check-input" type="checkbox" value="">
+        <label for="agb" class="form-check-label"><a href="agb.html">AGB</a> gelesen</label>
+      </div>
+      <div class="mt-2">
+        <label>Newsletter abonnieren<br>
+          <div class="form-check form-check-inline">
+            <input id="nLetterJa" class="form-check-input" type="radio" name="newsletter" checked>
+            <label for="nLetterJa" class="form-check-label">Ja</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input id="nLetterNein" class="form-check-input" type="radio" name="newsletter">
+            <label for="nLetterNein" class="form-check-label">Nein</label>
+          </div>
+          </label>
+      </div>
+      <div class="mt-2">
+        <label for="bem" class="form-label">Bemerkung</label>
+        <textarea id="bem" class="form-control" rows="2"></textarea>
+      </div>
+      <div class="row my-2 mx-0">
+        <input class="btn btn-success" type="submit" value="absenden">
+      </div>
+    </form>
+  </div>
+  <script>
+    function submit() {
+      event.preventDefault();
+    }
+  </script>
+  <!-- <footer>(c) 2023 Roger Ottiger</footer> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
