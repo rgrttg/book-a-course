@@ -23,10 +23,11 @@ Optional: Bestätigungsseite mit Daten aus LocalStorage erzeugen.
 
 ## 5 Seiten codieren (Fortsetzung)
 ### booking-form.html
-Telefon G, Telefon P hinzufügen... POS,
-Alle Placeholder entfernen... POS,
+Telefon G, Telefon P hinzufügen... POS, 
+Alle Placeholder entfernen... POS, 
+In Figma Check/AGB anpassen... POS, 
 
-in figma check/agb anpassen
+## TODO 
 Validierung
 LocalStorage
 
