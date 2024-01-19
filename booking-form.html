@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <form id="myForm" action="confirmation.html" onsubmit="submit()">
+    <form id="myForm" action="confirmation.html" onsubmit="validate()">
       <div class="mt-2">
         <label for="anr" class="form-label">Anrede</label>
         <select id="anr" class="form-select" aria-label="Anrede">
@@ -82,8 +82,9 @@
     </form>
   </div>
   <script>
-    function submit() {
+    function validate() {
       event.preventDefault();
+      document.getElementById('myForm').submit();
     }
   </script>
   <!-- <footer>(c) 2023 Roger Ottiger</footer> -->

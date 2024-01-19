@@ -27,3 +27,6 @@ Telefon G, Telefon P hinzufügen... POS,
 Alle Placeholder entfernen... POS,
 
 in figma check/agb anpassen
+Validierung
+LocalStorage
+
