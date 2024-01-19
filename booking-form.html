@@ -13,8 +13,8 @@
       <div class="mt-2">
         <label for="anr" class="form-label">Anrede</label>
         <select id="anr" class="form-select" aria-label="Anrede">
-          <option selected value="Herr">Herr</option>
           <option value="Frau">Frau</option>
+          <option value="Herr" selected>Herr</option>
         </select>
       </div>
       <div class="mt-2">
@@ -26,7 +26,11 @@
         <input id="nname" class="form-control" type="text" placeholder="Muster" autocomplete="family-name">
       </div>
       <div class="mt-2">
-        <label for="str" class="form-label">Strasse Nr.</label>
+        <label for="geb" class="form-label">Geburtsdatum</label>
+        <input id="geb" class="form-control" type="date">
+      </div>
+      <div class="mt-2">
+        <label for="str" class="form-label">Strasse</label>
         <input id="str" class="form-control" type="text" placeholder="Talstrasse 1" autocomplete="street-address">
       </div>
       <div class="mt-2">
@@ -42,9 +46,15 @@
         <!-- TODO: Autocomplete hinzufügen -->
         <input id="email" class="form-control" type="e-mail" autocomplete="email">
       </div>
+      <!-- Telefon G -->
       <div class="mt-2">
-        <label for="geb" class="form-label">Geburtsdatum</label>
-        <input id="geb" class="form-control" type="date">
+        <label for="phoneG" class="form-label">Telefon G</label>
+        <input id="phoneG" class="form-control" type="tel">
+      </div>
+      <!-- Telefon P -->
+      <div class="mt-2">
+        <label for="phoneP" class="form-label">Telefon G</label>
+        <input id="phoneP" class="form-control" type="tel">
       </div>
       <div class="form-check mt-2">
         <input id="agb" class="form-check-input" type="checkbox" value="">
