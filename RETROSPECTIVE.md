@@ -30,12 +30,15 @@ Optional: Bestätigungsseite mit Daten aus LocalStorage erzeugen.
 Telefon G, Telefon P hinzufügen... POS, 
 Alle Placeholder entfernen... POS, 
 In Figma Check/AGB anpassen... POS, 
+### function.js
 Daten in Variablen speichern... POS
 Validierung hinzufügen... POS
 LocalStorage hinzufügen... POS
 
-## TODO 
-
 ## Optional
+### confirmation.html
 Daten zurück schreiben... POS
-Daten ausgeben
+Daten ausgeben... POS
+
+## TODO 
+Tipp von Ray: IMMER Zurück-Button
