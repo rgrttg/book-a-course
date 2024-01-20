@@ -9,19 +9,35 @@ function setStore() { // Erweitert von: file:///home/petra/Documents/form-intro/
   let plz = document.getElementById("plz").value;
   let ort = document.getElementById("ort").value;
   let email = document.getElementById("email").value;
-  let telefonG = document.getElementById("telG").value;
-  let telefonP = document.getElementById("telP").value;
-  let agb = document.getElementById("agb").value;
-  let newsletter = document.getElementById("nLetterJa").value;
+  let telefonG = document.getElementById("phoneG").value; // String!
+  let telefonP = document.getElementById("phoneP").value; // String!
+  let agb = document.getElementById("agb").checked;
+  let newsletter = document.getElementById("nLetterJa").checked;
   let bemerkung = document.getElementById("bem").value;
+  // DEVS
+  console.log(vorname);
+  console.log(nachname);
+  console.log(geburtsdatum);
+  console.log(strasse);
+  console.log(plz);
+  console.log(ort);
+  console.log(email);
+  console.log(telefonG);
+  console.log(telefonP);
+  console.log(agb);
+  console.log(newsletter);
+  console.log(bemerkung);
+  
   // prüfen ob NICHT gesetzt
-  // if (!vorname) {
-  // dann error ausgeben
-
-  // } else {
+  // if (!telefonP || !telefonP || !agb) 
+  if (!vorname || !nachname || !geburtsdatum || !strasse || !plz || !ort || !email || !agb) 
+  {
+    // dann error ausgeben
+    document.getElementById("error").innerText = "Bitte alles ausfüllen!";
+  } else {
   // sonst speichern
 
   // jetzt senden
     document.getElementById('myForm').submit();
-  // }
+  }
 }
