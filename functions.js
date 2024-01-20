@@ -35,7 +35,15 @@ function setStore() { // Erweitert von: file:///home/petra/Documents/form-intro/
     // dann error ausgeben
     document.getElementById("error").innerText = "Bitte alles ausfüllen!";
   } else {
-  // sonst speichern
+    // sonst speichern
+    sessionStorage.setItem('vorname', vorname);
+    sessionStorage.setItem('nachname', nachname);
+    sessionStorage.setItem('geburtsdatum', geburtsdatum);
+    sessionStorage.setItem('strasse', strasse);
+    sessionStorage.setItem('plz', plz);
+    sessionStorage.setItem('ort', ort);
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('agb', agb);
 
   // jetzt senden
     document.getElementById('myForm').submit();
