@@ -15,6 +15,10 @@ agb.html... POS                                 Dummy: nur heading
 
 https://github.com/rgrttg/book-a-course.git
 
+### with plenty of Commits
+
+https://github.com/rgrttg/book-a-course/commits/main/
+
 ## Fr/Sa Übung halt, Übung abgebrochen WEGEN GRIPPE
 
 ## 4 Feedback von Chris
@@ -26,8 +30,12 @@ Optional: Bestätigungsseite mit Daten aus LocalStorage erzeugen.
 Telefon G, Telefon P hinzufügen... POS, 
 Alle Placeholder entfernen... POS, 
 In Figma Check/AGB anpassen... POS, 
+Daten in Variablen speichern... POS
+Validierung hinzufügen... POS
+LocalStorage hinzufügen... POS
 
 ## TODO 
-Validierung
-LocalStorage
 
+## Optional
+Daten zurück schreiben... POS
+Daten ausgeben
