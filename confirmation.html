@@ -8,9 +8,9 @@
 
 </head>
 <body>
-  <!-- <h1>Hurra</h1> -->
   <div id="confirm"></div>
   <script>
+    let anrede = sessionStorage.getItem('anrede');
     let vorname = sessionStorage.getItem('vorname');
     let nachname = sessionStorage.getItem('nachname');
     let geburtsdatum = sessionStorage.getItem('geburtsdatum');
@@ -23,7 +23,7 @@
     document.getElementById("confirm").innerHTML = 
       `<h1>Best&auml;tigung</h1>
       <p>an: ${email}<br>
-        <br>f&uuml;r:
+        <br>f&uuml;r ${anrede}
         <br>${vorname} ${nachname}
         <br>${strasse}
         <br>${plz} ${ort}<br>
